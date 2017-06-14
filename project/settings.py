@@ -43,6 +43,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+    'graphing',
+    'polls.apps.PollsConfig',
     'welcome',
 )
 
@@ -87,6 +89,7 @@ from . import database
 
 DATABASES = {
     'default': database.config()
+
 }
 
 
